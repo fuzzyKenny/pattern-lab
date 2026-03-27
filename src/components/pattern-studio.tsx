@@ -339,7 +339,7 @@ export function PatternStudio() {
           initial={{ opacity: 0, x: 18 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.48, delay: 0.08, ease: "easeOut" }}
-          className="flex min-h-0 flex-col overflow-hidden border-l border-white/10 bg-black"
+          className="flex min-h-0 flex-col overflow-hidden bg-black"
         >
           <div className="studio-scroll min-h-0 flex-1 overflow-y-auto pt-3">
             <InspectorSection title="Pattern">
