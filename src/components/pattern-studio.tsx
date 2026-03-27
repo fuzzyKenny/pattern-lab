@@ -87,18 +87,15 @@ function RangeRow({
         <span className="text-[0.98rem] text-white/82">{label}</span>
         <div className="relative h-6">
           <div className="absolute inset-x-0 top-1/2 h-[6px] -translate-y-1/2 bg-white/10" />
-          <motion.div
+          <div
             className="absolute left-0 top-1/2 h-[6px] -translate-y-1/2 bg-white/18"
-            animate={{ width: `${progress}%` }}
-            transition={{ type: "spring", stiffness: 260, damping: 24 }}
+            style={{ width: `${progress}%` }}
           />
-          <motion.div
+          <div
             className="absolute top-1/2 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white"
-            animate={{ left: `${progress}%` }}
-            transition={{ type: "spring", stiffness: 260, damping: 24 }}
+            style={{ left: `${progress}%` }}
           />
-          <motion.input
-            whileTap={{ scale: 1.01 }}
+          <input
             type="range"
             min={min}
             max={max}
@@ -329,8 +326,11 @@ export function PatternStudio() {
             >
               experiment
             </span>
-            <h2 className="text-[1.55rem] font-semibold tracking-[-0.05em] text-white">
-              Patten Lab
+            <h2
+              className="text-[1.55rem] font-semibold tracking-[-0.05em] text-white"
+              style={{ fontFamily: '"Inter", sans-serif' }}
+            >
+              Pattern Studio
             </h2>
           </div>
         </div>
